@@ -29,6 +29,7 @@
         color: #fff;
         font-family: "Gothic A1", sans-serif;
       }
+
       h1,
       h2,
       h3,
@@ -51,6 +52,17 @@
         font-family: "Oswald", sans-serif;
       }
 
+      li a {
+        color: #fff;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      li a:hover {
+        color: #000;
+        background-color: #fff;
+      }
+
       .header {
         display: flex;
         flex-direction: row;
@@ -65,6 +77,18 @@
       }
 
       /*Hero*/
+      i {
+        font-size: 25px;
+        color: #fff;
+        transition: all 200ms ease-in-out;
+        padding: 5px;
+      }
+
+      i:hover {
+        color: #000;
+        background-color: #fff;
+      }
+
       .new-song-hero {
         padding: 100px 25px;
       }
@@ -91,9 +115,6 @@
         font-size: 20px;
       }
 
-      i {
-        font-size: 25px;
-      }
       /*About Section*/
       .about {
         padding: 50px 25px;
@@ -113,6 +134,7 @@
       .mcr-image {
         text-align: center;
       }
+
       /*Albums Section*/
       .albums {
         padding: 50px 25px;
@@ -151,7 +173,7 @@
 
       .newsletter h4 {
         margin-bottom: 16px;
-        opacity: 0.7;
+        opacity: 0.8;
       }
 
       .newsletter input[type="text"] {
@@ -172,8 +194,8 @@
 https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/original/bf5c516d116f8b6bd43f691819736286.jpg?1676057088"
         />
         <ul>
-          <li>Tour</li>
-          <li>Media</li>
+          <li><a href="#albums">Media</a></li>
+          <li><a href="#newsletter">Tour</a></li>
           <li>Merch</li>
         </ul>
       </div>
@@ -194,11 +216,24 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
             <div class="decay-info">
               <h2>The Foundations of Decay</h2>
               <p>
-                Available On: <i class="fa-brands fa-spotify"></i>
-                <i class="fa-brands fa-apple"></i>
-                <i class="fa-brands fa-youtube"></i>
+                Available On:
+                <a
+                  href="https://open.spotify.com/track/6Pif6RkFoYzLygdqktus4Q?autoplay=true"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-spotify"></i
+                ></a>
+                <a
+                  href="https://music.apple.com/us/album/the-foundations-of-decay/1634004409?i=1634004416"
+                  target="_blank"
+                  ><i class="fa-brands fa-apple"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/watch?v=V2kWUJkRvVs&ab_channel=MyChemicalRomance"
+                  target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
               </p>
-              <button>Listen Here</button>
             </div>
           </div>
         </div>
@@ -262,6 +297,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
               a key element throughout their albums.
             </p>
             <iframe
+              id="albums"
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/album/3VSl97ITIbXoFQvx2DQ605?utm_source=generator&theme=0"
               width="100%"
@@ -376,7 +412,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
           </div>
         </div>
       </div>
-      <div class="newsletter">
+      <div class="newsletter" id="newsletter">
         <h3>Newsletter</h3>
         <h4>Sign up for tour updates, new music and more</h4>
         <form>
