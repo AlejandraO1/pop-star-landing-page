@@ -35,6 +35,35 @@
       h4 {
         font-family: "Oswald", sans-serif;
       }
+
+      /* Header */
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        text-align: center;
+        padding: 10px;
+      }
+
+      li {
+        font-size: 25px;
+        font-family: "Oswald", sans-serif;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .logo {
+        width: 20%;
+        height: auto;
+        overflow: hidden;
+      }
+
       /*Hero*/
       .new-song-hero {
         padding: 100px 25px;
@@ -127,7 +156,18 @@
       }
     </style>
     <div class="container">
-      <h1>My Chemical Romance</h1>
+      <div class="header">
+        <img
+          class="logo"
+          src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/original/bf5c516d116f8b6bd43f691819736286.jpg?1676057088"
+        />
+        <ul>
+          <li>Tour</li>
+          <li>Media</li>
+          <li>Merch</li>
+        </ul>
+      </div>
       <div class="new-song-hero">
         <div class="row">
           <div class="col-md-6">
