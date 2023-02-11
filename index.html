@@ -117,7 +117,7 @@
 
       /*About Section*/
       .about {
-        padding: 50px 25px;
+        padding: 60px 25px;
       }
 
       .about h3 {
@@ -132,7 +132,7 @@
       }
 
       .mcr-image {
-        text-align: center;
+        text-align: end;
       }
 
       /*Albums Section*/
@@ -178,6 +178,15 @@
 
       .newsletter input[type="text"] {
         width: 25%;
+      }
+
+      .sign-up {
+        transition: all 200ms ease-in-out;
+      }
+
+      .sign-up:hover {
+        background-color: #000;
+        color: #fff;
       }
 
       /*Footer*/
@@ -428,7 +437,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
         <h4>Sign up for tour updates, new music and more</h4>
         <form>
           <input type="text" placeholder="Enter email address" />
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Sign up" class="sign-up" />
         </form>
       </div>
       <footer>
@@ -439,6 +448,16 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
           >open-sourced</a
         >
       </footer>
+      <script>
+        function acceptEmail(event) {
+          event.preventDefault();
+          alert(
+            `Thank you for signing up. While you wait for more news, listen to some MCR songs!`
+          );
+        }
+        let signUpButton = document.querySelector(".sign-up");
+        signUpButton.addEventListener("click", acceptEmail);
+      </script>
     </div>
   </body>
 </html>
