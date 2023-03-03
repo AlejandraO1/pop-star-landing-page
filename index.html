@@ -63,6 +63,11 @@
         background-color: #fff;
       }
 
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
       .header {
         display: flex;
         flex-direction: row;
@@ -94,11 +99,7 @@
       }
 
       .decay-logo {
-        text-align: start;
-      }
-
-      .decay {
-        border: 1px solid #fff;
+        text-align: center;
       }
 
       .decay-info {
@@ -132,7 +133,7 @@
       }
 
       .mcr-image {
-        text-align: end;
+        text-align: center;
       }
 
       /*Albums Section*/
@@ -205,6 +206,39 @@
         color: #000;
         background-color: #fff;
       }
+      /*Responsiveness*/
+      @media (max-width: 600px) {
+        li {
+          font-size: 18px;
+        }
+
+        .logo {
+          width: 30%;
+        }
+
+        .new-song-hero {
+          padding: 50px 25px;
+        }
+
+        .about {
+          padding: 0px 25px 50px;
+        }
+
+        .newsletter input[type="text"] {
+          width: 55%;
+        }
+
+        footer {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .about p,
+        .albums p {
+          font-size: 14px;
+        }
+      } ;
     </style>
     <div class="container">
       <div class="header">
@@ -254,6 +288,15 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
                   ><i class="fa-brands fa-youtube"></i
                 ></a>
               </p>
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/6Pif6RkFoYzLygdqktus4Q?utm_source=generator&theme=0"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              ></iframe>
             </div>
           </div>
         </div>
