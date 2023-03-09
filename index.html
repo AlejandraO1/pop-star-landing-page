@@ -157,7 +157,7 @@
         margin-top: 12px;
       }
 
-      .albums .col-md-6 {
+      .albums .col-lg-6 {
         padding: 25px;
       }
 
@@ -206,7 +206,18 @@
         color: #000;
         background-color: #fff;
       }
+
       /*Responsiveness*/
+      @media (max-width: 950px) {
+        .new-song-hero {
+          padding: 50px 25px;
+        }
+
+        .about {
+          padding: 0px 25px 50px;
+        }
+      }
+
       @media (max-width: 600px) {
         li {
           font-size: 18px;
@@ -214,14 +225,6 @@
 
         .logo {
           width: 30%;
-        }
-
-        .new-song-hero {
-          padding: 50px 25px;
-        }
-
-        .about {
-          padding: 0px 25px 50px;
         }
 
         .newsletter input[type="text"] {
@@ -255,7 +258,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
       </div>
       <div class="new-song-hero">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="decay-logo">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/557/original/ab67616d0000b2736e30fdfa40ded68773542d56.jpg?1668803441"
@@ -266,7 +269,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
               />
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="decay-info">
               <h2>The Foundations of Decay</h2>
               <p>
@@ -303,7 +306,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
       </div>
       <div class="about">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <h3>About the Band</h3>
             <p>
               My Chemical Romance, also known as MCR, is one of the greatest
@@ -319,7 +322,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
               presence such as Post Malone, Billie Eilish and Twenty One Pilots.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="mcr-image">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/010/original/my_chemical_romance_jg_55.jpg?1671137305"
@@ -334,7 +337,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
       <div class="albums">
         <h3>Albums</h3>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <h4>I Brought You My Bullets, You Brought Me Your Love</h4>
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/556/original/I_Brought_You_My_Bullets__You_Brought_Me_Your_Love_cover.jpg?1668803421"
@@ -370,7 +373,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             ></iframe>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <h4>Three Cheers for Sweet Revenge</h4>
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/555/original/Three_Cheers_for_Sweet_Revenge.png?1668803411"
@@ -404,7 +407,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             ></iframe>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <h4>The Black Parade</h4>
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/554/original/Blackparadecover.jpg?1668803401"
@@ -439,7 +442,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             ></iframe>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <h4>Danger Days: The True Lives of the Fabulous Killjoys</h4>
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/553/original/Danger_Days-album-2010.jpg?1668803391"
@@ -484,7 +487,14 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/879/origina
         </form>
       </div>
       <footer>
-        Made by dedicated fan <strong>Alejandra Ortega 🤍</strong> and is
+        Made by dedicated fan
+        <strong
+          ><a href="https://alejandra-ortega.netlify.app/" target="_blank">
+            Alejandra Ortega</a
+          >
+          🤍</strong
+        >
+        and is
         <a
           href="https://github.com/AlejandraO1/pop-star-landing-page"
           target="_blank"
